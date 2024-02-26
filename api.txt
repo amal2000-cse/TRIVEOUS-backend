@@ -24,3 +24,30 @@ req.body{
     "password":"456784",
       "email":"manojupdated@gmail.com"
 }
+
+4. Create Product 
+POST REQUEST : http://localhost:3000/api/products/create/new
+
+req.body : {
+  "title":"HCL Laptop",
+  "desc":"HD laptop",
+  "img":"image.png",
+  "categories":"electronics",
+  "size":"L",
+  "color":"black",
+  "price":"10000"
+  
+}
+
+5. Get all the products 
+
+GET REQUEST : http://localhost:3000/api/products
+
+6. Get all the products based on search
+
+1. searching any products
+    GET REQUEST : http://localhost:3000/api/products?new=HCL
+
+2. searching based on categories
+    GET REQUEST : http://localhost:3000/api/products?category=electronics
+
