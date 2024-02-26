@@ -1,0 +1,26 @@
+1. Register a user
+
+POST REQUEST : http://localhost:3000/api/auth/register
+req.body : {
+  "username":"manoj",
+  "email":"manoj@gmail.com",
+  "password":"123"
+}
+
+2. Login
+POST REQUEST : http://localhost:3000/api/auth/login
+
+req.body : {
+     "email":"manoj@gmail.com",
+     "password":"123"
+}
+
+3. update the user Profile
+PUT REQUEST : http://localhost:3000/api/users/65dc8050c5e976361ff6cb25
+
+req.body{
+    "userId":"65dc8050c5e976361ff6cb25",
+    "username":"manoj updated",
+    "password":"456784",
+      "email":"manojupdated@gmail.com"
+}
