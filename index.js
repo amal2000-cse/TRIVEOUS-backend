@@ -25,6 +25,10 @@ app.use('/api/auth',authRoute);
 app.use('/api/users',userRoute);
 app.use('/api/products',productRoute);
 
+app.get('/',(req,res)=>{
+    res.send('Backend Is working')
+})
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 })
